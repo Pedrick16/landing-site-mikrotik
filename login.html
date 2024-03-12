@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="./src/output.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Angkor&family=Anton&family=Honk&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap"
+		rel="stylesheet">
+	<style>
+		span {
+			font-family: "Angkor", serif;
+			font-weight: 400;
+			font-style: normal;
+
+			text-shadow: -2px -2px 2px #0b1aa0,
+			2px -2px 2px rgb(0, 0, 0),
+			-2px 2px 2px #000000,
+
+			2px 2px 2px #000000;
+		}
+
+		@media (max-width:578px) {
+			.__responsive{
+				grid-template-columns: 1fr;
+				background-image: url('/bebemo6.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+
+			.__responsive .__landing_letter{
+				display: none;
+			}
+
+			
+
+		
+
+			.__responsive .__login-responsive{
+				background-color: unset;
+				
+		
+				
+			}
+
+			.__responsive .__login-responsive .__banner-letter {
+				display: block !important;
+			}
+
+		
+
+			.__responsive .__login-responsive p{
+				color: white;
+			}
+
+			.__responsive .__login-responsive .__img_responsive{
+				display: none;
+			}
+			
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="h-screen w-screen  ">
+
+		<div class="__responsive h-[100%]  w-[100%]  grid lg:grid-cols-[2fr,.8fr]   ">
+			<div class="hidden">
+			$(if chap-id)
+			<form name="sendin" action="$(link-login-only)" method="post">
+				<input type="hidden" name="username" />
+				<input type="hidden" name="password" />
+				<input type="hidden" name="dst" value="https://www.youtube.com/" />
+				<input type="hidden" name="popup" value="true" />
+			</form>
+
+			<script type="text/javascript" src="md5.js"></script>
+			<script type="text/javascript">
+				
+					function doLogin() {
+					document.sendin.username.value = document.login.username.value;
+					document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+					document.sendin.submit();
+					return false;
+					}
+			
+			</script>
+			$(endif)
+			</div>
+
+			<div class="__landing_letter  bg-cover bg-no-repeat" style="background-image: url('/bebemo4.png');">
+				<div class="__image-overlay pb-[100px] flex items-center justify-center flex-col h-[100%] w-[100%]" style=" background-color: rgba(0, 0, 0, 0.5);">
+					<span class="font-bold text-white text-[30px] text-shadow-md  text-center">" ITO NA ANG <span
+							class="text-[50px] text-red-800 ">B</span>ROAD<span
+							class="text-[50px] text-red-800">B</span>AND NG <span
+							class="text-[50px] text-red-800">M</span>ASA! "</span>
+
+					<span class="font-bold text-white text-[25px]">- HANDOG NI <span
+							class="text-blue-500 text-[40px]">BOBSI</span></span>
+				</div>
+			</div>
+			<div class="__login-responsive grid grid-rows-[auto,1fr] p-[50px]   items-center justify-center bg-white">
+				<img src="/bebemologo.png" alt="s" class="__img_responsive">
+				<div class="__banner-letter hidden">
+				<div class=" text-center flex flex-col" >
+					<span class="text-center text-[15px]  text-white">"ITO NA ANG <span class="text-[20px] text-red-800 ">B</span>ROAD <span class="text-[20px] text-red-800 ">B</span>AND NG  <span class="text-[20px] text-red-800 ">M</span>ASA!"</span>
+					<span class="text-[13px] text-white">-HANDOG NI <span class="text-blue-500 text-[15px]">BOBSI</span></span>
+				</div>
+				</div>
+
+				<form   name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+					<div class="flex flex-col gap-y-2  pb-[150px]">
+					
+					<p class="text-center font-bold text-[20px]">Login</p>
+					<input type="hidden" name="dst" value="https://www.youtube.com/" />
+					<input type="hidden" name="popup" value="true" />
+
+					<input type="text" name="username" placeholder="Enter your username"
+						class="h-[40px] w-[100%] p-5 border border-blue-400 rounded-lg">
+					<input type="text" name="password" placeholder="Enter your password"
+						class="h-[40px]  w-[100%] p-5 border border-blue-400 rounded-lg">
+					<button name="submit" type="submit"
+						class="h-[40px] w-[100%] text-white bg-blue-500  rounded-lg">Submit</button>
+
+
+
+					</div>
+				</form>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+
+	<script type="text/javascript">
+	
+		  document.login.username.focus();
+	
+	</script>
+	<script type="text/javascript">
+		document.oncontextmenu = function () { return false; }
+	</script>
+</body>
+
+</html>
